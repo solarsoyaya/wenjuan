@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // 保存原始访问路径
+    sessionStorage.redirect = location.href;
+    // 重定向到首页
+    location.replace(location.origin + '/wenjuan/');
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

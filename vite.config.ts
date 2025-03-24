@@ -7,6 +7,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/wenjuan/',
   plugins: [vue(), vueJsx(), vueDevTools()],
   resolve: {
     alias: {

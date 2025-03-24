@@ -9,5 +9,19 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+        // 检查是否有重定向
+        (function() {
+          var redirect = sessionStorage.redirect;
+          delete sessionStorage.redirect;
+          if (redirect && redirect !== location.href) {
+            var segments = redirect.split('/');
+            var app = segments.indexOf('wenjuan');
+            if (app > -1) {
+              history.replaceState(null, null, redirect.slice(segments.slice(0, app + 1).join('/').length) || '/');
+            }
+          }
+        })();
+      </script>
   </body>
 </html>
