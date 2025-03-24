@@ -36,7 +36,7 @@ import {
   getStringStatusByCurrentStatus,
   getCurrentStatus,
 } from '@/utils'
-import MaterialsHeader from '@/components/SurveyChoms/Common/MaterialsHeder.vue';
+import MaterialsHeader from '@/components/SurveyComs/Common/MaterialsHeader.vue';
 // 类型
 import type { OptionsStatus } from '@/types'
 const props = defineProps<{
